@@ -1,0 +1,11 @@
+name: shinyappsio_without_japanese_font
+title:
+username:
+account: ltl-manabi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4026634
+bundleId: 4515614
+url: https://ltl-manabi.shinyapps.io/shinyappsio_without_japanese_font/
+when: 1619329740.46825
+lastSyncTime: 1619329740.46826
