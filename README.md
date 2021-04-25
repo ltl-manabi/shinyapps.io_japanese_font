@@ -2,7 +2,7 @@
 
 <div align="right">
 タナカケンタ<br />
-https://mana.bi/
+https://mana.bi/<br />
 </div>
 
 [shinyapps.io](https://www.shinyapps.io/)で、グラフィックスに日本語を使用する設定のサンプルです。詳しくは[shinyapps.ioで任意の日本語フォントを使う](https://mana.bi/wiki.cgi?page=shinyapps%2Eio%A4%C7%C7%A4%B0%D5%A4%CE%C6%FC%CB%DC%B8%EC%A5%D5%A5%A9%A5%F3%A5%C8%A4%F2%BB%C8%A4%A6)をご覧ください。
@@ -30,7 +30,7 @@ https://mana.bi/
 
 ## ご自身のアプリでの使い方
 
-このリポジトリにある各種フォントをダウンロード、展開するシェルスクリプトを、Shinyアプリ内で `download.files()` 関数で取得し、`system()` 関数で実行してください。
+このリポジトリにある各種フォントをダウンロード、展開するシェルスクリプトを、Shinyアプリ内で `download.file()` 関数で取得し、`system()` 関数で実行してください。
 
 ### IPAexフォントの例
 
