@@ -2,8 +2,8 @@
 # 01-kmeans-app
 
 # 3種類のフォントをダウンロード、設定する
-download.file("https://raw.githubusercontent.com/ltl-manabi/shinyapps.io_japanese_font/master/use_3_font.sh", destfile = "use_3_font.sh")
-system("bash ./use_3_font.sh")
+download.file("https://raw.githubusercontent.com/ltl-manabi/shinyapps.io_japanese_font/master/use_4_font.sh", destfile = "use_4_font.sh")
+system("bash ./use_4_font.sh")
 
 # 列名を日本語に変える
 colnames(iris) <- c("がく片長", "がく片幅", "花びら長", "花びら幅", "種")
@@ -15,14 +15,14 @@ library(shiny)
 library(tidyverse)
 
 ui <- fluidPage(
-  headerPanel("Irisデータの k-means 法によるクラスタリング (日本語フォント設定なし)"),
+  headerPanel("Irisデータの k-means 法によるクラスタリング (日本語フォントが選べます)"),
   sidebarPanel(
     selectInput("xcol", "X 軸", names(iris)),
     selectInput("ycol", "Y 軸", names(iris),
       selected = names(iris)[[2]]),
     numericInput("clusters", "クラスタ数", 3,
       min = 1, max = 9),
-    selectInput("fontface", "フォント", c("IPAexGothic", "Source Han Sans", "Noto Sans CJK JP"))
+    selectInput("fontface", "フォント", c("IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont"))
   ),
   mainPanel(
     plotOutput("plot1")
@@ -44,7 +44,7 @@ server <- function(input, output) {
                                     y = (!!rlang::sym(input$ycol)),
                                     colour = factor(clusters()$cluster)))
     g <- g + geom_point() + labs(colour = "クラスタ番号")
-    g <- g + theme_gray(base_family = (!!rlang::sym(input$fontface)), base_size = 18))
+    g <- g + theme_gray(base_family = input$fontface, base_size = 18)
     print(g)
   })
 

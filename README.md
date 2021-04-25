@@ -33,6 +33,11 @@ https://mana.bi/
 * [Notoフォント](https://www.google.com/get/noto/): 例のアプリでは使用していませんが、Noto明朝 (Noto Serif CJK JP) も指定できます。
 * https://ltl-manabi.shinyapps.io/shinyappsio_with_noto_font/
 
+### ggplot2での使用例
+
+* 上記3フォントに加え、手書きフォントの[瀬戸フォント](https://ja.osdn.net/projects/setofont/)を使用するよう設定しました。
+* https://ltl-manabi.shinyapps.io/shinyappsio_with_japanese_font_ggplot2/
+
 ## ご自身のアプリでの使い方
 
 このリポジトリにある各種フォントをダウンロード、展開するシェルスクリプトを、Shinyアプリ内で `download.file()` 関数で取得し、`system()` 関数で実行してください。
@@ -73,3 +78,14 @@ system("bash ./use_noto_font.sh")
 plot(..., family = "Noto Sans CJK JP")
 ```
 
+### 瀬戸フォントの例
+
+```r
+# Notoフォントをダウンロード、登録する
+download.file("https://raw.githubusercontent.com/ltl-manabi/shinyapps.io_japanese_font/master/use_seto_font.sh", destfile = "use_seto_font.sh")
+system("bash ./use_seto_font.sh")
+
+...
+
+plot(..., family = "SetoFont")
+```
