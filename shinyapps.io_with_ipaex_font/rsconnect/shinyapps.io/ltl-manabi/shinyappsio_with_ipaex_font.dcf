@@ -1,0 +1,11 @@
+name: shinyappsio_with_ipaex_font
+title:
+username:
+account: ltl-manabi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4026816
+bundleId: 4515960
+url: https://ltl-manabi.shinyapps.io/shinyappsio_with_ipaex_font/
+when: 1619336400.17667
+lastSyncTime: 1619336400.17668

@@ -17,17 +17,17 @@ https://mana.bi/
 ### IPAexフォントの使用例
 
 * [IPAexフォント](https://moji.or.jp/ipafont/): 例のアプリでは使用していませんが、IPAex明朝 (IPAexMincho) も指定できます。
-* https://ltl-manabi.shinyapps.io/shinyapps.io_with_ipaex_font/
+* https://ltl-manabi.shinyapps.io/shinyappsio_with_ipaex_font/
 
 ### 源ノフォントの使用例
 
 * [源ノフォント](https://github.com/adobe-fonts/source-han-sans): 例のアプリでは使用していませんが、源ノ明朝 (Source Han Serif) も指定できます。
-* https://ltl-manabi.shinyapps.io/shinyapps.io_with_sourcehan_font/
+* https://ltl-manabi.shinyapps.io/shinyappsio_with_sourcehan_font/
 
 ### Notoフォントの使用例
 
 * [Notoフォント](https://www.google.com/get/noto/): 例のアプリでは使用していませんが、Noto明朝 (Noto Serif) も指定できます。
-* https://ltl-manabi.shinyapps.io/shinyapps.io_with_noto_font/
+* https://ltl-manabi.shinyapps.io/shinyappsio_with_noto_font/
 
 ## ご自身のアプリでの使い方
 
