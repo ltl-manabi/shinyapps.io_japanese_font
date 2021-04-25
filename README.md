@@ -14,6 +14,10 @@ https://mana.bi/
 
 コードは https://github.com/rstudio-education/shiny.rstudio.com-tutorial/blob/master/part-1-code/app.R をそのまま使いました。`iris` データを k-Means法でクラスタリングしている例です。
 
+### 日本語フォントの設定をしていない例
+
+* https://ltl-manabi.shinyapps.io/shinyappsio_without_japanese_font/
+
 ### IPAexフォントの使用例
 
 * [IPAexフォント](https://moji.or.jp/ipafont/): 例のアプリでは使用していませんが、IPAex明朝 (IPAexMincho) も指定できます。
