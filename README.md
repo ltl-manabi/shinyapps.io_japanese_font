@@ -26,7 +26,7 @@ https://mana.bi/
 
 ### Notoフォントの使用例
 
-* [Notoフォント](https://www.google.com/get/noto/): 例のアプリでは使用していませんが、Noto明朝 (Noto Serif) も指定できます。
+* [Notoフォント](https://www.google.com/get/noto/): 例のアプリでは使用していませんが、Noto明朝 (Noto Serif CJK JP) も指定できます。
 * https://ltl-manabi.shinyapps.io/shinyappsio_with_noto_font/
 
 ## ご自身のアプリでの使い方
@@ -66,6 +66,6 @@ system("bash ./use_noto_font.sh")
 
 ...
 
-plot(..., family = "Noto Sans")
+plot(..., family = "Noto Sans CJK JP")
 ```
 

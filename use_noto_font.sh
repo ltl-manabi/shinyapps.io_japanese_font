@@ -15,8 +15,8 @@ mkdir ~/tmp
 cd ~/tmp
 curl -O -L https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip
 curl -O -L https://noto-website-2.storage.googleapis.com/pkgs/NotoSerifCJKjp-hinted.zip
-unzip NotoSansCJKjp-hinted.zip
-unzip NotoSerifCJKjp-hinted.zip
+unzip -d NotoSansCJKjp-hinted NotoSansCJKjp-hinted.zip
+unzip -d NotoSerifCJKjp-hinted NotoSerifCJKjp-hinted.zip
 mkdir -p ~/.fonts/noto
 cp ./NotoSansCJKjp-hinted/*.otf ~/.fonts/noto
 cp ./NotoSerifCJKjp-hinted/*.otf ~/.fonts/noto
