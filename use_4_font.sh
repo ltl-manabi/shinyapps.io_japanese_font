@@ -14,6 +14,13 @@
 mkdir ~/tmp
 cd ~/tmp
 
+# 瀬戸フォントの設定
+# 最後に指定すると、デフォルトのSans, Serifともに瀬戸フォントになってしまうので
+curl -O -L https://ja.osdn.net/projects/setofont/downloads/61995/setofont_v_6_20.zip
+unzip setofont_v_6_20.zip
+mkdir -p ~/.fonts/seto
+cp ./setofont/*.ttf ~/.fonts/seto
+
 # IPAexフォントの設定
 curl -O -L https://moji.or.jp/wp-content/ipafont/IPAexfont/IPAexfont00401.zip
 unzip IPAexfont00401.zip
@@ -34,12 +41,6 @@ unzip -d NotoSerifCJKjp-hinted NotoSerifCJKjp-hinted.zip
 mkdir -p ~/.fonts/noto
 cp ./NotoSansCJKjp-hinted/*.otf ~/.fonts/noto
 cp ./NotoSerifCJKjp-hinted/*.otf ~/.fonts/noto
-
-# 瀬戸フォントの設定
-curl -O -L https://ja.osdn.net/projects/setofont/downloads/61995/setofont_v_6_20.zip
-unzip setofont_v_6_20.zip
-mkdir -p ~/.fonts/seto
-cp ./setofont/*.ttf ~/.fonts/seto
 
 # フォントキャッシュの更新
 fc-cache -f ~/.fonts

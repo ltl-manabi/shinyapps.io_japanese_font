@@ -1,7 +1,7 @@
 # https://github.com/rstudio-education/shiny.rstudio.com-tutorial/blob/master/part-1-code/app.R
 # 01-kmeans-app
 
-# 3種類のフォントをダウンロード、設定する
+# 4種類のフォントをダウンロード、設定する
 download.file("https://raw.githubusercontent.com/ltl-manabi/shinyapps.io_japanese_font/master/use_4_font.sh", destfile = "use_4_font.sh")
 system("bash ./use_4_font.sh")
 
@@ -15,14 +15,15 @@ library(shiny)
 library(tidyverse)
 
 ui <- fluidPage(
-  headerPanel("Irisデータの k-means 法によるクラスタリング (日本語フォントが選べます)"),
+  headerPanel("Irisデータの k-means 法によるクラスタリング (日本語フォントが選べます) ※最初は文字化けしています"),
   sidebarPanel(
     selectInput("xcol", "X 軸", names(iris)),
     selectInput("ycol", "Y 軸", names(iris),
       selected = names(iris)[[2]]),
     numericInput("clusters", "クラスタ数", 3,
       min = 1, max = 9),
-    selectInput("fontface", "フォント", c("IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont"))
+    selectInput("fontface", "フォント", c("DejaVu Sans", "IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont"),
+    selected = "DejaVu Sans")
   ),
   mainPanel(
     plotOutput("plot1")
