@@ -22,7 +22,7 @@ ui <- fluidPage(
       selected = names(iris)[[2]]),
     numericInput("clusters", "クラスタ数", 3,
       min = 1, max = 9),
-    selectInput("fontface", "フォント", c("IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont"))
+    selectInput("fontface", "フォント", c("IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont", "IPAexMincho", "Source Han Serif", "Noto Serif CJK JP"))
   ),
   mainPanel(
     plotOutput("plot1")
