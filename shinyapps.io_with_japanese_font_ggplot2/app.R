@@ -15,15 +15,14 @@ library(shiny)
 library(tidyverse)
 
 ui <- fluidPage(
-  headerPanel("Irisデータの k-means 法によるクラスタリング (日本語フォントが選べます) ※最初は文字化けしています"),
+  headerPanel("Irisデータの k-means 法によるクラスタリング (日本語フォントが選べます)"),
   sidebarPanel(
     selectInput("xcol", "X 軸", names(iris)),
     selectInput("ycol", "Y 軸", names(iris),
       selected = names(iris)[[2]]),
     numericInput("clusters", "クラスタ数", 3,
       min = 1, max = 9),
-    selectInput("fontface", "フォント", c("DejaVu Sans", "IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont"),
-    selected = "DejaVu Sans")
+    selectInput("fontface", "フォント", c("IPAexGothic", "Source Han Sans", "Noto Sans CJK JP", "SetoFont"))
   ),
   mainPanel(
     plotOutput("plot1")
