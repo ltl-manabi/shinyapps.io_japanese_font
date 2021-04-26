@@ -13,7 +13,7 @@
 
 mkdir ~/tmp
 cd ~/tmp
-curl -O -L https://ja.osdn.net/projects/setofont/downloads/61995/setofont_v_6_20.zip/
+curl -O -L https://ja.osdn.net/projects/setofont/downloads/61995/setofont_v_6_20.zip
 unzip setofont_v_6_20.zip
 mkdir -p ~/.fonts/seto
 cp ./setofont/*.ttf ~/.fonts/seto
