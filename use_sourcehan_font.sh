@@ -13,10 +13,8 @@
 
 mkdir ~/tmp
 cd ~/tmp
-#curl -O -L https://github.com/adobe-fonts/source-han-sans/releases/download/2.003R/SourceHanSans.ttc
-curl -O -L https://github.com/adobe-fonts/source-han-sans/raw/release/Variable/OTC/SourceHanSans-VF.otf.ttc
-#curl -O -L https://github.com/adobe-fonts/source-han-serif/releases/download/1.001R/SourceHanSerif.ttc
-curl -O -L https://github.com/adobe-fonts/source-han-serif/raw/release/Variable/OTC/SourceHanSerif-VF.otf.ttc
+curl -O -L https://github.com/adobe-fonts/source-han-sans/releases/download/2.003R/SourceHanSans.ttc
+curl -O -L https://github.com/adobe-fonts/source-han-serif/releases/download/1.001R/SourceHanSerif.ttc
 mkdir -p ~/.fonts/sourcehan
 cp ./SourceHan*.ttc ~/.fonts/sourcehan
 fc-cache -f ~/.fonts
